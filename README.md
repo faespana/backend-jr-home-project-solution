@@ -69,6 +69,10 @@ The response of the endpoint MUST follow the following structure. I.e.
 1. Please **fork this project** repository in a personal repository.
 2. Implement the required endpoint and enjoy. **Please limit yourself to a timebox of 4hrs of work**.
 3. **Notify us the result.** If the repository is private please invite us to check the solution.
-4. **We will rate**, the code quality & structure, the requirements, and the result of the calculations.
+4. **We will rate**, the code quality & structure, the requirements, and the calculations results.
 
 
+## Project setup
+
+1. Perform an `npm install`
+2. To run the project just do a `node index.js`

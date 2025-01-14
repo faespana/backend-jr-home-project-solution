@@ -24,10 +24,8 @@ app.use(logger); // Logging middleware
 
 // Routes
 app.get("/", (req, res) => {
-  res.json({ info: "Node.js, Express, and Postgres API" });
+  res.json({ info: "Backend JR project API" });
 });
-
-app.use("/demo", authController.verifyToken, demoRoute);
 
 // Error handling middleware
 app.use(errorHandler);
