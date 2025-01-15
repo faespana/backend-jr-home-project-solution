@@ -1,4 +1,4 @@
-# Backend JR project
+# Backend JR project Solution
 
 This project contains a Node Express Boilerplate. with some dependencies
 
@@ -76,3 +76,13 @@ The response of the endpoint MUST follow the following structure. I.e.
 
 1. Perform an `npm install`
 2. To run the project just do a `node index.js`
+
+## New files
+As a part of the solution, I create two files: 
+1. calculation.js, it is inside of route folder, here we can read validation_top2boxes.json, make all the statistics calculation, prepare our response, and send the results.
+2. Finally, in index.js we call calculation.js and we use the new route "app.use("/calculation", calculationRoute)"
+
+I use postman to make and test our app, here a picture: 
+
+![image](https://github.com/user-attachments/assets/4743271f-f752-46a6-ab29-51522635525d)
+
