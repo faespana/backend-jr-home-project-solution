@@ -5,6 +5,8 @@ const errorHandler = require("./middlewares/errorHandler");
 const logger = require("./middlewares/logger");
 const authController = require("./controllers/authController");
 const demoRoute = require("./routes/demo");
+const calculationRoute = require("./routes/calculation"); // Importamos la nueva ruta que creamos
+
 require("dotenv").config();
 
 const app = express();
@@ -26,6 +28,8 @@ app.use(logger); // Logging middleware
 app.get("/", (req, res) => {
   res.json({ info: "Backend JR project API" });
 });
+
+app.use("/calculation", calculationRoute); // Usamos la nueva ruta
 
 // Error handling middleware
 app.use(errorHandler);
